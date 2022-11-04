@@ -29,6 +29,13 @@ body::before {
     z-index: -1;
   }
 
+  header h1 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: rgb(110, 107, 107);
+    font-weight: 300;
+  }
+
   .slider-container {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     height: 70vh;
@@ -47,12 +54,12 @@ body::before {
     top: -15vh;
     left: -15vw;
     transition: 0.4s ease;
-    z-index: 1;
+    z-index: -1;
   }
   
   .slide.active {
     opacity: 1;
-  }
+    }
 
   .arrow {
     position: fixed;
@@ -76,4 +83,11 @@ body::before {
   
   .right-arrow {
     right: calc(15vw - 65px);
+  }
+
+  h3, p{
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(77, 76, 76);
+    z-index: 5;
   }
